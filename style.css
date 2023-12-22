@@ -5,9 +5,18 @@
 body {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   letter-spacing: 1.2px;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-weight: 600;
   line-height: 1.5;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  width: 120px;
 }
 
 .hero {
@@ -19,7 +28,8 @@ body {
 }
 
 h1 {
-  font-size: 3.2rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
 }
 
 h1,
@@ -41,7 +51,9 @@ a {
 nav {
   display: flex;
   padding: 1em;
-  justify-content: center;
+  justify-content: space-between;
+  /* gap: 1em; */
+  align-items: center;
 }
 
 nav ul li a {
@@ -54,12 +66,12 @@ nav ul li a:hover {
 }
 
 nav ul {
-    padding: 0;
+  padding: 0;
 }
 
 nav ul {
   display: flex;
-  gap: 1em;
+  /* gap: .5em; */
   list-style: none;
 }
 
@@ -68,7 +80,7 @@ header {
 }
 
 .lead {
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 main {
@@ -77,6 +89,13 @@ main {
   gap: 2em;
   padding: 1em;
   margin-bottom: 3em;
+}
+
+main p {
+  text-align: justify;
+}
+
+.container {
   max-width: 600px;
   margin: 0 auto;
 }
@@ -99,4 +118,22 @@ main {
   li {
     color: whitesmoke;
   }
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  .lead {
+  font-size: 1.4rem;
+}
 }
